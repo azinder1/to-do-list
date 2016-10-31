@@ -20,28 +20,37 @@
         <div class="form-group">
           <h4>Hey Kidd'os What Chores Do We Need To Do This Week?</h4>
           <select class="form-control" id="kid-name">
-            <option>Samantha</option>
-            <option>Dylan</option>
-            <option>Kim</option>
-            <option>John</option>
+            <option value="Samantha">Samantha</option>
+            <option value="Dylan">Dylan</option>
+            <option value="Kim">Kim</option>
+            <option value="John">John</option>
           </select>
           <div>
-            <input type="checkbox" name="chores" value="rakeLeaves">Rake The Leaves<br>
-            <input type="checkbox" name="chores" value="washWindows">Wash Windows<br>
-            <input type="checkbox" name="chores" value="walkDog">Walk The Dog<br>
-            <input type="checkbox" name="chores" value="mowLawn">Mow the Lawn<br>
-            <input type="checkbox" name="chores" value="cookDinner">Cook Dinner<br>
-            <input type="checkbox" name="chores" value="vacuum">Vacuum Rugs<br>
+            <input type="checkbox" name="chores" value="Rake Leaves">Rake The Leaves<br>
+            <input type="checkbox" name="chores" value="Wash Windows">Wash Windows<br>
+            <input type="checkbox" name="chores" value="Walk Dog">Walk The Dog<br>
+            <input type="checkbox" name="chores" value="Mow Lawn">Mow the Lawn<br>
+            <input type="checkbox" name="chores" value="Cook Dinner">Cook Dinner<br>
+            <input type="checkbox" name="chores" value="Vacuum">Vacuum Rugs<br>
             <input type="checkbox" name="chores" value="Sweep">Sweep Floors<br>
           </div>
-            <button type="submit" class="btn-info" id="add-chore">Add Item</button>
-            <button type="submit" class="btn-danger" id="remove-chore">Chore is Done</button>
+            <button type="submit" class="btn-info" name="add-chore">Add Item</button>
         </div>
       </form>
-      <div>
-        <h2>Items</h2>
-          <ul id="location">
-          </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="chores">
+            <p></p>
+            <button type="submit" class="btn-danger" name="remove-chore">Chore is Done</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="show-chore">
+            <h2></h2>
+            <p>Who added it: <span class="add-name"></span></p>
+            <p>Who dun it: <span class="dun-name"></span></p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

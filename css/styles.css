@@ -1,5 +1,5 @@
 body {
-  background-color: #d8dbb6;
+  background-color: lightblue;
 }
 h1 {
   text-align: center;
@@ -11,5 +11,18 @@ h2 {
   text-align: center;
 }
 ul {
-  text-align: center;
+}
+
+#show-chore {
+  display: none;
+}
+
+.chore {
+  cursor: pointer;
+  color: #0088cc;
+  font-size: 20px;
+}
+
+.chore:hover {
+  text-decoration: underline;
 }
